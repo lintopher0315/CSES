@@ -2,6 +2,8 @@
 
 using namespace std;
 
+long long m=1e9+7;
+
 int main() {
     int n;
     cin >> n;
@@ -14,8 +16,7 @@ int main() {
     long long tot=63;
     while (c<n-1) {
         v.push_back(tot);
-        tot=(tot*2-v[0])%((long long)1e9+7);
-        if (tot<0) tot+=(long long)1e9+7;
+        tot=((tot*2-v[0])%m+m)%m;
         v.erase(v.begin());
         ++c;
     }
