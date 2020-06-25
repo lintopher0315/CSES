@@ -2,7 +2,7 @@
 
 using namespace std;
 
-long long m=1e9+7;
+const int m=1e9+7;
 
 int main() {
     int n;
